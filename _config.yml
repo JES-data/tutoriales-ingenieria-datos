@@ -1,12 +1,17 @@
 remote_theme: "pmarsceill/just-the-docs"
 
-title: "Mi Portafolio de Data Engineering"
-description: "Tutoriales y mejores prácticas"
+# Ajustes visuales para parecerse a un sitio de documentación profesional
+title: "Data Engineering Masterclass"
+description: "Guías técnicas y arquitecturas de datos"
 
-# Esto activa la navegación automática
+# Esto hace que el menú sea más robusto
 aux_links:
   "Mi LinkedIn":
-    - "https://www.linkedin.com/in/tu-usuario" # <-- ¡Pon aquí tu link!
+    - "https://www.linkedin.com/in/tu-usuario"
 
-# Orden de navegación (opcional, pero recomendado)
-nav_sort: desc
+# Configuración del estilo
+just_the_docs:
+  # Activa el buscador integrado (clave para sitios profesionales)
+  search_enabled: true
+  # Muestra el botón de "Editar en GitHub" (esto da mucha credibilidad)
+  edit_url: "https://github.com/TU-USUARIO/TU-REPOSITORIO/edit/main/"
