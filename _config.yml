@@ -1,0 +1,12 @@
+remote_theme: "pmarsceill/just-the-docs"
+
+title: "Mi Portafolio de Data Engineering"
+description: "Tutoriales y mejores prácticas"
+
+# Esto activa la navegación automática
+aux_links:
+  "Mi LinkedIn":
+    - "https://www.linkedin.com/in/tu-usuario" # <-- ¡Pon aquí tu link!
+
+# Orden de navegación (opcional, pero recomendado)
+nav_sort: desc
