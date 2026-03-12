@@ -1,0 +1,19 @@
+---
+---
+@import "{{ site.remote_theme | default: 'just-the-docs/just-the-docs' }}";
+
+/* Reducir el ancho de la barra lateral */
+.side-bar {
+  width: 240px; 
+}
+
+/* Ajustar el margen principal para que el contenido no se encime */
+.main-content-wrap {
+  margin-left: 240px;
+}
+
+/* Hacer la fuente del menú un poco más pequeña y profesional */
+.nav-list-link {
+  font-size: 0.9rem;
+  padding: 8px 24px;
+}
