@@ -16,7 +16,7 @@ just_the_docs:
 
 # Enlaces extra en el menú lateral
 aux_links:
-  "Linked In":
+  "LinkedIn":
     - "https://www.linkedin.com/in/jshifres"
 
 # Importante: Le dice a GitHub dónde buscar los archivos Markdown
