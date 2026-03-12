@@ -1,17 +1,23 @@
+# Tema principal que da el estilo de documentación técnica
 remote_theme: "pmarsceill/just-the-docs"
 
-# Ajustes visuales para parecerse a un sitio de documentación profesional
-title: "Data Engineering Masterclass"
+# Información general del sitio
+title: "Portafolio de Data Engineering"
 description: "Guías técnicas y arquitecturas de datos"
 
-# Esto hace que el menú sea más robusto
-aux_links:
-  "Mi LinkedIn":
-    - "https://www.linkedin.com/in/tu-usuario"
-
-# Configuración del estilo
+# Configuración de búsqueda y navegación (Microsoft-style)
 just_the_docs:
-  # Activa el buscador integrado (clave para sitios profesionales)
   search_enabled: true
-  # Muestra el botón de "Editar en GitHub" (esto da mucha credibilidad)
-  edit_url: "https://github.com/TU-USUARIO/TU-REPOSITORIO/edit/main/"
+  search_full_text: true
+  # Botón para que los reclutadores vean tu código en GitHub
+  edit_url: "https://github.com/TU-USUARIO/TU-REPOSITORIO/edit/main/docs/"
+  # Orden de navegación automático
+  nav_sort: nav_order
+
+# Enlaces extra en el menú lateral
+aux_links:
+  "LinkedIn":
+    - "https://www.linkedin.com/in/TU-USUARIO-AQUI"
+
+# Importante: Le dice a GitHub dónde buscar los archivos Markdown
+docs_dir: docs
