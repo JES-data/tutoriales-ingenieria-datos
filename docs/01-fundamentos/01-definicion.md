@@ -2,7 +2,7 @@
 layout: default
 title: Definición y Rol
 parent: 1. ¿Qué es la Ingeniería de Datos?
-nav_order: 1
+nav_order: 3
 ---
 
 # Definición y Rol del Ingeniero de Datos
