@@ -2,6 +2,10 @@
 ---
 @import "{{ site.remote_theme | default: 'just-the-docs/just-the-docs' }}";
 
+.side-bar {
+  background-color: red !important;
+}
+
 /* Reducir el ancho de la barra lateral */
 .side-bar {
   width: 120px !important;
