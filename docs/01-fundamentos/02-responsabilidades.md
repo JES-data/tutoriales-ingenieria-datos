@@ -2,7 +2,7 @@
 layout: default
 title: Responsabilidades Clave
 parent: 1. ¿Qué es la Ingeniería de Datos?
-nav_order: 2
+nav_order: 4
 ---
 
 # Responsabilidades Clave
