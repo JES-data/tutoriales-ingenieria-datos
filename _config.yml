@@ -1,22 +1,3 @@
-# Información básica
-title: "Portafolio de Data Engineering1"
-description: "Guías técnicas y arquitecturas de datos"
-
-# Tema
-remote_theme: "pmarsceill/just-the-docs"
-
-# Configuración de navegación
-just_the_docs:
-  search_enabled: true
-  search_full_text: true
-  nav_sort: nav_order
-  # Forzamos el ancho del menú desde la configuración del tema
-  sidebar_width: 220px
-
-# Enlaces extra
-aux_links:
-  "Linked-In":
-    - "https://www.linkedin.com/in/TU-USUARIO-AQUI"
-
-# Directorio de contenido
-docs_dir: docs
+theme: jekyll-theme-minimal
+title: Tu Nombre - Tutoriales de Data Engineering
+description: Tutoriales prácticos y arquitectura de datos.
