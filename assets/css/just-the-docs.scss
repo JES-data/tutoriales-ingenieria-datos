@@ -4,9 +4,8 @@
 
 /* Reducir el ancho de la barra lateral */
 .side-bar {
-  width: 120px; 
+  width: 120px !important;
 }
-
 /* Ajustar el margen principal para que el contenido no se encime */
 .main-content-wrap {
   margin-left: 120px;
