@@ -12,11 +12,14 @@ just_the_docs:
   edit_url: "https://github.com/TU-USUARIO/TU-REPOSITORIO/edit/main/docs/"
   nav_sort: nav_order
   sidebar_width: 240px
+  color_scheme: light
+  
+  
 
 # Enlaces extra en el menú lateral
 aux_links:
   "LinkedIn":
-    - "https://www.linkedin.com/in/TU-USUARIO-AQUI"
+    - "https://www.linkedin.com/in/jshifres"
 
 # Ubicación de archivos
 docs_dir: docs
