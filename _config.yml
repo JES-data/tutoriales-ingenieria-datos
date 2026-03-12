@@ -2,15 +2,6 @@
 title: "Portafolio de Data Engineering"
 description: "Guías técnicas e ingenieria de datos"
 
-# Configuración nativa del tema (sin necesidad de archivos CSS externos)
-just_the_docs:
-  # ... (tus otras configuraciones existentes)
-  
-  # AJUSTE QUIRÚRGICO:
-  # Algunos temas permiten definir el ancho directamente aquí
-  # Si el ancho predeterminado es muy grande, intenta esto:
-  sidebar_width: 240px
-  
 # Tema principal
 remote_theme: "pmarsceill/just-the-docs"
 
@@ -20,6 +11,7 @@ just_the_docs:
   search_full_text: true
   edit_url: "https://github.com/TU-USUARIO/TU-REPOSITORIO/edit/main/docs/"
   nav_sort: nav_order
+  sidebar_width: 240px
 
 # Enlaces extra en el menú lateral
 aux_links:
