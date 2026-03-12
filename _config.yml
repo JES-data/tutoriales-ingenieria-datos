@@ -22,5 +22,9 @@ aux_links:
 # Importante: Le dice a GitHub dónde buscar los archivos Markdown
 docs_dir: docs
 
+# Esto le dice a Jekyll dónde buscar tus estilos personalizados
 sass:
   sass_dir: assets/css
+
+# Esto asegura que el tema base esté cargado antes de tus cambios
+remote_theme: "pmarsceill/just-the-docs"
