@@ -7,7 +7,7 @@ nav_order: 3
 
 # Definición y Rol del Ingeniero de Datos
 
-Un Ingeniero de Datos es el arquitecto encargado de construir las "tuberías" por donde fluye la información. 
+Un Ingeniero de Datos es el ingeniero encargado de construir las "tuberías" por donde fluye la información. 
 
 ### Diferencia clave con Data Science:
 * **Ingeniero:** Construye y mantiene el sistema (La cocina y los suministros).
