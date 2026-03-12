@@ -1,6 +1,6 @@
 # Información general del sitio
 title: "Portafolio de Data Engineering"
-description: "Guías técnicas y arquitecturas de datos"
+description: "Guías técnicas e ingenieria de datos"
 
 # Tema principal
 remote_theme: "pmarsceill/just-the-docs"
