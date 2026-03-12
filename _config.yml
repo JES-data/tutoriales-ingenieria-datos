@@ -22,4 +22,4 @@ docs_dir: docs
 
 # Configuración de estilos CSS
 sass:
-  sass_dir: assets/css
+  sass_dir: .
