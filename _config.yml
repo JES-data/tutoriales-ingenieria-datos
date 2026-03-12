@@ -21,3 +21,6 @@ aux_links:
 
 # Importante: Le dice a GitHub dónde buscar los archivos Markdown
 docs_dir: docs
+
+sass:
+  sass_dir: assets/css
