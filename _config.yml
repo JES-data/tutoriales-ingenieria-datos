@@ -1,29 +1,22 @@
-# Información general del sitio
+# Información básica
 title: "Portafolio de Data Engineering"
-description: "Guías técnicas e ingenieria de datos"
+description: "Guías técnicas y arquitecturas de datos"
 
-# Tema principal
+# Tema
 remote_theme: "pmarsceill/just-the-docs"
 
-# Configuración de búsqueda y navegación
+# Configuración de navegación
 just_the_docs:
   search_enabled: true
   search_full_text: true
-  edit_url: "https://github.com/TU-USUARIO/TU-REPOSITORIO/edit/main/docs/"
   nav_sort: nav_order
-  sidebar_width: 240px
-  color_scheme: light
-  
-  
+  # Forzamos el ancho del menú desde la configuración del tema
+  sidebar_width: 220px
 
-# Enlaces extra en el menú lateral
+# Enlaces extra
 aux_links:
-  "Linked In":
-    - "https://www.linkedin.com/in/jshifres"
+  "LinkedIn":
+    - "https://www.linkedin.com/in/TU-USUARIO-AQUI"
 
-# Ubicación de archivos
+# Directorio de contenido
 docs_dir: docs
-
-# Configuración de estilos CSS
-sass:
-  sass_dir: .
