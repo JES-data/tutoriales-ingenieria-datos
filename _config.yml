@@ -1,3 +1,23 @@
-theme: jekyll-theme-minimal
-title: Tu Nombre - Tutoriales de Data Engineering
-description: Tutoriales prácticos y arquitectura de datos.
+# Tema principal que da el estilo de documentación técnica
+remote_theme: "pmarsceill/just-the-docs"
+
+# Información general del sitio
+title: "Portafolio de Data Engineering"
+description: "Guías técnicas y arquitecturas de datos"
+
+# Configuración de búsqueda y navegación (Microsoft-style)
+just_the_docs:
+  search_enabled: true
+  search_full_text: true
+  # Botón para que los reclutadores vean tu código en GitHub
+  edit_url: "https://github.com/TU-USUARIO/TU-REPOSITORIO/edit/main/docs/"
+  # Orden de navegación automático
+  nav_sort: nav_order
+
+# Enlaces extra en el menú lateral
+aux_links:
+  "LinkedIn":
+    - "https://www.linkedin.com/in/TU-USUARIO-AQUI"
+
+# Importante: Le dice a GitHub dónde buscar los archivos Markdown
+docs_dir: docs
