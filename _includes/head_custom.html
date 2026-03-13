@@ -1,19 +1,40 @@
 <style>
-  /* Menú lateral fijo en 260px (punto medio ideal) */
-  .side-bar {
-    width: 260px !important;
-    min-width: 260px !important;
-  }
-  
-  /* Reducimos el padding para que el contenido se acerque más al menú */
-  /* Ajustamos a 280px (260 de menú + 20 de espacio limpio) */
-  .main-content-wrap {
-    padding-left: 280px !important;
-    padding-right: 40px !important; /* Espacio extra a la derecha por estética */
-    max-width: 1000px !important;   /* Evita que las líneas de texto sean infinitas y difíciles de leer */
+  /* --- AJUSTES PARA COMPUTADORA (Pantallas grandes) --- */
+  @media (min-width: 67rem) {
+    /* Reducimos el ancho de la barra lateral */
+    .side-bar {
+      width: 250px !important;
+      min-width: 250px !important;
+    }
+
+    /* Pegamos el contenido al menú: 
+       Cambiamos padding-left para que sea casi igual al ancho del menú */
+    .main-content-wrap {
+      padding-left: 250px !important; 
+      margin-left: 0 !important;
+      max-width: 1000px !important;
+    }
+
+    /* Ajuste fino del contenedor de texto */
+    .main-content {
+      padding-left: 30px !important; /* Espacio pequeño entre menú y texto */
+      margin-left: 0 !important;
+    }
   }
 
-  /* Ajuste de los items del menú */
+  /* --- AJUSTES PARA CELULARES (Se activa en pantallas pequeñas) --- */
+  @media (max-width: 66.9rem) {
+    .side-bar {
+      width: auto !important;
+      min-width: auto !important;
+      visibility: visible !important;
+    }
+    .main-content-wrap {
+      padding-left: 0 !important;
+    }
+  }
+
+  /* Estilo visual de los links (para ambos) */
   .nav-list-link {
     font-size: 14px !important;
     padding: 6px 15px !important;
