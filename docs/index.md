@@ -6,7 +6,7 @@ description: "Portal de documentación técnica sobre Ingeniería de Datos."
 permalink: /
 ---
 
-# 🏗️ Bienvenidos a mi Portafolio de Ingeniería de Datos
+# 🏗️ Bienvenidos a mi Portafolio de Ingeniería de Datos.
 
 Este espacio está diseñado para documentar de forma estructurada los conceptos, arquitecturas y herramientas que utilizo para transformar datos en activos estratégicos.
 
