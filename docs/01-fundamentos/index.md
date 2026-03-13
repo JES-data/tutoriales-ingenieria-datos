@@ -9,7 +9,7 @@ has_children: true
 
 Exploramos la base sobre la cual se construye toda la analítica moderna. La ingeniería de datos no es solo mover archivos, es diseñar la columna vertebral de la toma de decisiones.
 
-![Fundamentos de Ingeniería de Datos](./images/fundamentos-ingenieria-datos.png)
+![Fundamentos de Ingeniería de Datos](../images/fundamentos-ingenieria-datos.png)
 
 
 ## Contenido de este módulo:
