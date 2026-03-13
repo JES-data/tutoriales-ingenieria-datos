@@ -1,49 +1,33 @@
 <style>
-  /* --- AJUSTES PARA COMPUTADORA (Pantallas grandes) --- */
-  @media (min-width: 67rem) {
-    /* Menú lateral fijo */
-    .side-bar {
-      width: 250px !important;
-      min-width: 250px !important;
-    }
+  :root {
+    --content-width: 1250px;
+  }
 
-    /* Contenedor principal: eliminamos el centrado automático */
+  /* --- Configuración para Escritorio --- */
+  @media screen and (min-width: 768px) {
     .main-content-wrap {
-      padding-left: 250px !important; /* El mismo ancho del menú */
-      margin-left: 0 !important;      /* Evita que se centre en la pantalla */
-      margin-right: 0 !important;
-      max-width: none !important;    /* Rompemos el límite de ancho para controlarlo abajo */
+      max-width: var(--content-width);
+      margin-left: auto;
+      margin-right: auto;
     }
 
-    /* El bloque de texto real: aquí controlamos la cercanía */
-    .main-content {
-      margin-left: 0 !important;      /* Pegado a la izquierda */
-      padding-left: 40px !important;  /* Ajusta este número para acercar/alejar más */
-      max-width: 900px !important;    /* Mantiene el texto en un ancho legible */
+    .main-header {
+      max-width: var(--content-width);
+      margin: 0 auto;
     }
   }
 
-  .wrapper {
-    max-width: 1200px; /* Ajusta este valor (ej. 1400px) o usa 90% */
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Si usas el tema minimal o similar, ajusta la sección principal */
-section {
-    width: 100%;
-    max-width: 100%;
-    float: none;
-}
-
-  /* --- AJUSTES PARA CELULARES --- */
-  @media (max-width: 66.9rem) {
-    .side-bar {
-      width: auto !important;
-      visibility: visible !important;
-    }
+  /* --- Configuración para Celulares (Responsive) --- */
+  @media screen and (max-width: 767px) {
     .main-content-wrap {
-      padding-left: 0 !important;
+      padding: 15px; /* Más espacio en los bordes para que no se pegue al cel */
+      width: 100%;
+    }
+    
+    /* Aseguramos que los diagramas o tablas no se desborden */
+    img, pre, table {
+      max-width: 100%;
+      overflow-x: auto;
     }
   }
 </style>
