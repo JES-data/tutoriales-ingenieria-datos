@@ -25,4 +25,4 @@ Explora los módulos disponibles en el menú de la izquierda:
 ---
 
 > [!TIP]
-> **¿Buscas optimizar tus datos?** > Puedes revisar mi experiencia profesional y conectar conmigo a través de mi [LinkedIn](TU_URL_AQUI).
+> **¿Buscas optimizar tus datos?** > Puedes revisar mi experiencia profesional y conectar conmigo a través de mi [LinkedIn](https://www.linkedin.com/in/juan-shifres/).
