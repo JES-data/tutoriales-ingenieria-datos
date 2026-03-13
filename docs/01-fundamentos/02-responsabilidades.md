@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Responsabilidades Clave
+title: Rol y responsabilidades
 parent: 1. ¿Qué es la Ingeniería de Datos?
 nav_order: 4
 ---
