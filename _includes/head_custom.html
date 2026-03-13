@@ -27,4 +27,30 @@
       padding: 0 40px;
     }
   }
+</style><style>
+  :root {
+    --nav-width: 260px;
+    /* Aumentamos el ancho máximo. 1400px es ideal para pantallas modernas 1080p+ */
+    --content-max-width: 1400px; 
+  }
+
+  @media screen and (min-width: 65rem) {
+    .container {
+      max-width: 100% !important;
+      display: flex;
+    }
+
+    .side-bar {
+      width: var(--nav-width) !important;
+      flex-shrink: 0;
+    }
+
+    .main-content-wrap {
+      flex: 1;
+      /* Ajustamos para que use más espacio, pero con un límite para no perder legibilidad */
+      max-width: var(--content-max-width) !important;
+      margin: 0 auto; 
+      padding: 0 60px; /* Un poco más de aire a los lados */
+    }
+  }
 </style>
