@@ -1,42 +1,36 @@
 <style>
   /* --- AJUSTES PARA COMPUTADORA (Pantallas grandes) --- */
   @media (min-width: 67rem) {
-    /* Reducimos el ancho de la barra lateral */
+    /* Menú lateral fijo */
     .side-bar {
       width: 250px !important;
       min-width: 250px !important;
     }
 
-    /* Pegamos el contenido al menú: 
-       Cambiamos padding-left para que sea casi igual al ancho del menú */
+    /* Contenedor principal: eliminamos el centrado automático */
     .main-content-wrap {
-      padding-left: 50px !important; 
-      margin-left: 0 !important;
-      max-width: 1000px !important;
+      padding-left: 250px !important; /* El mismo ancho del menú */
+      margin-left: 0 !important;      /* Evita que se centre en la pantalla */
+      margin-right: 0 !important;
+      max-width: none !important;    /* Rompemos el límite de ancho para controlarlo abajo */
     }
 
-    /* Ajuste fino del contenedor de texto */
+    /* El bloque de texto real: aquí controlamos la cercanía */
     .main-content {
-      padding-left: 30px !important; /* Espacio pequeño entre menú y texto */
-      margin-left: 0 !important;
+      margin-left: 0 !important;      /* Pegado a la izquierda */
+      padding-left: 40px !important;  /* Ajusta este número para acercar/alejar más */
+      max-width: 900px !important;    /* Mantiene el texto en un ancho legible */
     }
   }
 
-  /* --- AJUSTES PARA CELULARES (Se activa en pantallas pequeñas) --- */
+  /* --- AJUSTES PARA CELULARES --- */
   @media (max-width: 66.9rem) {
     .side-bar {
       width: auto !important;
-      min-width: auto !important;
       visibility: visible !important;
     }
     .main-content-wrap {
       padding-left: 0 !important;
     }
-  }
-
-  /* Estilo visual de los links (para ambos) */
-  .nav-list-link {
-    font-size: 14px !important;
-    padding: 6px 15px !important;
   }
 </style>
