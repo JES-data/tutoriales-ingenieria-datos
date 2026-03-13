@@ -1,34 +1,34 @@
 <style>
-  /* 1. Ajustamos la proporción en pantallas grandes */
   @media screen and (min-width: 65rem) {
-    
-    /* Forzamos al contenedor global a usar todo el ancho de la ventana */
+    /* 1. Eliminamos márgenes laterales forzados en el contenedor padre */
     .container {
       max-width: 100% !important;
       padding-left: 0 !important;
       padding-right: 0 !important;
     }
 
-    /* El menú lateral se mantiene fijo */
+    /* 2. Definimos el menú con un ancho exacto */
     .side-bar {
       width: 250px !important;
       flex-shrink: 0;
     }
 
-    /* 2. Aquí está el cambio clave: 
-       El contenido ahora ocupa casi todo el espacio restante con un pequeño margen lateral */
+    /* 3. AQUI ESTÁ EL CAMBIO PARA ACERCARLO AL MENÚ */
     .main-content-wrap {
       flex: 1;
-      max-width: 95% !important; /* Casi el total de la pantalla */
-      margin: 0 auto;
-      padding-left: 5% !important; /* Espacio extra para que no se pegue al texto */
-      padding-right: 5% !important;
+      max-width: 100% !important; 
+      /* Reducimos el margen izquierdo a casi nada para acercarlo al menú */
+      margin-left: 20px !important; 
+      margin-right: auto;
+      /* Eliminamos el padding lateral excesivo */
+      padding-left: 20px !important; 
+      padding-right: 40px !important;
     }
 
-    /* 3. Aseguramos que los bloques de código y tablas sigan el nuevo ancho */
-    pre, .highlight, table {
-      max-width: 100% !important;
-      width: 100% !important;
+    /* 4. Aseguramos que el encabezado también se acerque */
+    .main-header {
+      margin-left: 20px !important;
+      padding-left: 20px !important;
     }
   }
 </style>
