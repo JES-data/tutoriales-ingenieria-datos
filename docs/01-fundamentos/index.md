@@ -5,7 +5,7 @@ nav_order: 2
 has_children: true
 ---
 
-# 🏗️ Módulo 1: Fundamentos de Ingeniería de Datos
+# 🏗️ Módulo 1: Fundamentos de Ingeniería de Datos.
 
 Exploramos la base sobre la cual se construye toda la analítica moderna. La ingeniería de datos no es solo mover archivos, es diseñar la columna vertebral de la toma de decisiones.
 
