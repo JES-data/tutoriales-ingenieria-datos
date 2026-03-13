@@ -1,35 +1,30 @@
 <style>
+  /* Ajustamos las variables raíz que el tema utiliza para calcular el layout */
   :root {
-    /* Ajusta el ancho de la barra lateral (por defecto suele ser 300px) */
-    --nav-width: 240px; 
-    
-    /* Ajusta el ancho del contenedor de texto central */
-    --content-width: 1000px;
-  }
- .main-content {
-    max-width: 1100px; /* ajusta el valor según lo que necesites */
+    --nav-width: 260px; /* Reducimos el ancho del menú */
+    --content-width: 1100px; /* Aumentamos el espacio de trabajo */
   }
 
-  @media screen and (min-width: 768px) {
-    /* Ajuste del ancho del sidebar */
+  @media screen and (min-width: 65rem) {
+    /* Forzamos al contenedor principal a ignorar el centrado rígido del tema */
+    .container {
+      max-width: 100% !important;
+      padding-left: 0 !important;
+      display: flex;
+    }
+
+    /* Ajustamos el sidebar para que sea fluido pero con límite */
     .side-bar {
-      width: var(--nav-width);
+      width: var(--nav-width) !important;
+      flex-shrink: 0;
     }
 
-    /* Ajuste para mover el contenido central cuando el sidebar es más chico */
+    /* El contenido principal ocupará el resto del espacio */
     .main-content-wrap {
-      margin-left: var(--nav-width);
-      max-width: var(--content-width);
-      /* Esto elimina el centrado rígido y lo alinea a la izquierda */
-      margin-right: auto;
-      padding-left: 40px;
-      padding-right: 40px;
-    }
-
-    /* Ajuste para el encabezado */
-    .main-header {
-      margin-left: var(--nav-width);
-      max-width: var(--content-width);
+      flex: 1;
+      max-width: var(--content-width) !important;
+      margin: 0 auto; /* Centramos el contenido dentro del espacio disponible */
+      padding: 0 40px;
     }
   }
 </style>
