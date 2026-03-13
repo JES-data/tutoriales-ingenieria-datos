@@ -1,18 +1,18 @@
 <style>
-  /* Fuerza absoluta al ancho del contenedor del menú */
+  /* Aumentamos un poco el ancho para que el texto sea legible */
   .side-bar {
-    width: 300px !important;
-    min-width: 300px !important;
+    width: 280px !important; /* Pasamos de 200 a 280 para evitar cortes */
+    min-width: 280px !important;
   }
-
-  /* Ajusta el contenido principal para que no se superponga */
+  
+  /* Ajustamos el margen para que el contenido no se pise con el menú */
   .main-content-wrap {
-    padding-left: 50px !important;
+    padding-left: 300px !important; /* 280px del menú + 20px de margen */
   }
 
-  /* Compacta la lista de navegación para que ocupe menos verticalmente */
+  /* Ajustamos el tamaño de fuente para que sea cómodo */
   .nav-list-link {
-    padding: 4px 16px !important;
-    font-size: 13px !important;
+    font-size: 14px !important;
+    padding: 8px 20px !important;
   }
 </style>
