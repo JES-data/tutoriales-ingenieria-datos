@@ -1,18 +1,21 @@
 <style>
-  /* Aumentamos un poco el ancho para que el texto sea legible */
+  /* Menú lateral fijo en 260px (punto medio ideal) */
   .side-bar {
-    width: 280px !important; /* Pasamos de 200 a 280 para evitar cortes */
-    min-width: 280px !important;
+    width: 260px !important;
+    min-width: 260px !important;
   }
   
-  /* Ajustamos el margen para que el contenido no se pise con el menú */
+  /* Reducimos el padding para que el contenido se acerque más al menú */
+  /* Ajustamos a 280px (260 de menú + 20 de espacio limpio) */
   .main-content-wrap {
-    padding-left: 300px !important; /* 280px del menú + 20px de margen */
+    padding-left: 280px !important;
+    padding-right: 40px !important; /* Espacio extra a la derecha por estética */
+    max-width: 1000px !important;   /* Evita que las líneas de texto sean infinitas y difíciles de leer */
   }
 
-  /* Ajustamos el tamaño de fuente para que sea cómodo */
+  /* Ajuste de los items del menú */
   .nav-list-link {
     font-size: 14px !important;
-    padding: 8px 20px !important;
+    padding: 6px 15px !important;
   }
 </style>
