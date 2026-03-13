@@ -1,44 +1,32 @@
 <style>
   :root {
-    --nav-width: 260px; /* Ancho fijo del menú */
-    --content-max-width: 1100px; /* Ancho máximo de tu contenido */
+    /* Ajusta el ancho de la barra lateral (por defecto suele ser 300px) */
+    --nav-width: 240px; 
+    
+    /* Ajusta el ancho del contenedor de texto central */
+    --content-width: 1000px;
   }
 
-  /* --- Ajustes de Escritorio --- */
   @media screen and (min-width: 768px) {
-    /* 1. Mover y ajustar el menú lateral */
+    /* Ajuste del ancho del sidebar */
     .side-bar {
       width: var(--nav-width);
-      position: fixed;
-      left: 0;
-      top: 0;
-      height: 100%;
-      overflow-y: auto;
     }
 
-    /* 2. Empujar el contenido principal para que empiece después del menú */
+    /* Ajuste para mover el contenido central cuando el sidebar es más chico */
     .main-content-wrap {
       margin-left: var(--nav-width);
-      max-width: var(--content-max-width);
-      padding: 0 40px; /* Espacio cómodo a los lados */
+      max-width: var(--content-width);
+      /* Esto elimina el centrado rígido y lo alinea a la izquierda */
+      margin-right: auto;
+      padding-left: 40px;
+      padding-right: 40px;
     }
 
-    /* 3. Asegurar que el header también respete el margen del menú */
+    /* Ajuste para el encabezado */
     .main-header {
       margin-left: var(--nav-width);
-      padding: 0 40px;
-    }
-  }
-
-  /* --- Ajustes de Celulares --- */
-  @media screen and (max-width: 767px) {
-    .side-bar {
-      width: 100%;
-      position: relative; /* En celular el menú es parte del flujo normal */
-    }
-    .main-content-wrap {
-      margin-left: 0;
-      padding: 15px;
+      max-width: var(--content-width);
     }
   }
 </style>
