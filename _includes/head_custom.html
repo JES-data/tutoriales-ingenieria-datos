@@ -1,42 +1,44 @@
 <style>
   :root {
-    --content-width: 1200px;
-    --nav-width: 240px; /* Reducido de 290px a 240px para que ocupe menos espacio */
+    --nav-width: 260px; /* Ancho fijo del menú */
+    --content-max-width: 1100px; /* Ancho máximo de tu contenido */
   }
 
-  /* --- Configuración para Escritorio --- */
+  /* --- Ajustes de Escritorio --- */
   @media screen and (min-width: 768px) {
-    .main-content-wrap {
-      max-width: var(--content-width);
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .main-header {
-      max-width: var(--content-width);
-      margin: 0 auto;
-    }
-
-    /* Ajuste fino del menú lateral */
-    .site-nav {
+    /* 1. Mover y ajustar el menú lateral */
+    .side-bar {
       width: var(--nav-width);
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      overflow-y: auto;
     }
-    
+
+    /* 2. Empujar el contenido principal para que empiece después del menú */
     .main-content-wrap {
-      padding-left: var(--nav-width);
+      margin-left: var(--nav-width);
+      max-width: var(--content-max-width);
+      padding: 0 40px; /* Espacio cómodo a los lados */
+    }
+
+    /* 3. Asegurar que el header también respete el margen del menú */
+    .main-header {
+      margin-left: var(--nav-width);
+      padding: 0 40px;
     }
   }
 
-  /* --- Configuración para Celulares --- */
+  /* --- Ajustes de Celulares --- */
   @media screen and (max-width: 767px) {
-    .main-content-wrap {
-      padding: 15px;
+    .side-bar {
       width: 100%;
+      position: relative; /* En celular el menú es parte del flujo normal */
     }
-    
-    img, pre, table {
-      max-width: 100%;
-      overflow-x: auto;
+    .main-content-wrap {
+      margin-left: 0;
+      padding: 15px;
     }
   }
 </style>
