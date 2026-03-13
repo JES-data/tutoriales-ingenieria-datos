@@ -53,5 +53,3 @@ Es común confundir la ingeniería de datos con otros perfiles del área.
 La ingeniería de datos **habilita** el trabajo de todos los demás roles.
 
 ---
-
-
