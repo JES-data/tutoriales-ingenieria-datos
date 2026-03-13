@@ -1,23 +1,12 @@
-# Tema principal que da el estilo de documentación técnica
-remote_theme: "pmarsceill/just-the-docs"
-
-# Información general del sitio
 title: "Portafolio de Data Engineering"
 description: "Guías técnicas y arquitecturas de datos"
+remote_theme: "pmarsceill/just-the-docs"
 
-# Configuración de búsqueda y navegación (Microsoft-style)
+# Esto le dice al tema cómo comportarse
 just_the_docs:
   search_enabled: true
-  search_full_text: true
-  # Botón para que los reclutadores vean tu código en GitHub
-  edit_url: "https://github.com/TU-USUARIO/TU-REPOSITORIO/edit/main/docs/"
-  # Orden de navegación automático
   nav_sort: nav_order
+  # Esta es la variable nativa del tema para el ancho
+  sidebar_width: 200px 
 
-# Enlaces extra en el menú lateral
-aux_links:
-  "LinkedIn":
-    - "https://www.linkedin.com/in/juan-shifres"
-
-# Importante: Le dice a GitHub dónde buscar los archivos Markdown
 docs_dir: docs
